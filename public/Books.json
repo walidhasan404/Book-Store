@@ -1,66 +1,75 @@
 [
     {
-      "image": "https://www.freepik.com/free-psd/realistic-book-cover-presentation_1016369.htm#fromView=search&page=1&position=15&uuid=6ba0576b-b354-435c-b70b-98987b6691ad",
-      "genre": "Science Fiction",
-      "author": "John Smith",
-      "title": "The Galactic Adventures",
-      "rating": 4.5
+      "image": "https://i.ibb.co/hcdc1G4/Book-Card.png",
+      "genre": "Fiction",
+      "author": "Awlad Hossain",
+      "title": "The Catcher in the Rye",
+      "rating": 5.00,
+      "id": 1
     },
     {
-      "image": "https://www.freepik.com/free-psd/book-hardcover-mockup_10698307.htm#fromView=search&page=1&position=13&uuid=6ba0576b-b354-435c-b70b-98987b6691ad",
+      "image": "https://i.ibb.co/4FKpnyX/Book-Card-1.png",
       "genre": "Mystery",
       "author": "Emily Johnson",
       "title": "The Mystery of Oakwood Manor",
-      "rating": 4.2
+      "rating": 4.2,
+      "id": 2
     },
     {
-      "image": "https://www.freepik.com/free-psd/realistic-book-cover-presentation_1016368.htm#fromView=search&page=1&position=5&uuid=6ba0576b-b354-435c-b70b-98987b6691ad",
+      "image": "https://i.ibb.co/3kT6KLR/Book-Card-6.png",
       "genre": "Fantasy",
       "author": "David Brown",
       "title": "The Wizard's Apprentice",
-      "rating": 4.8
+      "rating": 4.8,
+      "id": 3
     },
     {
-      "image": "https://www.freepik.com/free-psd/book-hardcover-mockup_9866173.htm#fromView=search&page=1&position=41&uuid=6ba0576b-b354-435c-b70b-98987b6691ad",
+      "image": "https://i.ibb.co/VNFWTYV/Book-Card-5.png",
       "genre": "Romance",
       "author": "Sophia Lee",
       "title": "Love in Paris",
-      "rating": 4.3
+      "rating": 4.3,
+      "id": 4
     },
     {
-      "image": "https://www.freepik.com/free-vector/world-book-day-background-flat-syle_2032601.htm#fromView=search&page=1&position=48&uuid=6ba0576b-b354-435c-b70b-98987b6691ad",
+      "image": "https://i.ibb.co/3kT6KLR/Book-Card-6.png",
       "genre": "Thriller",
       "author": "Michael Adams",
       "title": "The Silent Killer",
-      "rating": 4.6
+      "rating": 4.6,
+      "id": 5
     },
     {
-      "image": "https://www.freepik.com/free-vector/bike-guy-wattpad-book-cover_28596242.htm#fromView=search&page=1&position=51&uuid=6ba0576b-b354-435c-b70b-98987b6691ad",
+      "image": "https://i.ibb.co/fM6p2d4/Book-Card-3.png",
       "genre": "Historical Fiction",
       "author": "Emma White",
       "title": "The Secret Diary of Anne Frank",
-      "rating": 4.7
+      "rating": 4.7,
+      "id": 6
     },
     {
-      "image": "https://www.freepik.com/free-vector/open-book-templates-set_3924771.htm#fromView=search&page=1&position=52&uuid=6ba0576b-b354-435c-b70b-98987b6691ad",
+      "image": "https://i.ibb.co/HTf65qS/Book-Card-2.png",
       "genre": "Young Adult",
       "author": "William Taylor",
       "title": "The Maze Runner",
-      "rating": 4.4
+      "rating": 4.4,
+      "id": 7
     },
     {
-      "image": "https://www.freepik.com/free-psd/book-hardcover-mockup_9866173.htm#fromView=search&page=1&position=41&uuid=6ba0576b-b354-435c-b70b-98987b6691ad",
+      "image": "https://i.ibb.co/HD7HrvZ/Book-Card-7.png",
       "genre": "Horror",
       "author": "Sarah Jones",
       "title": "The Haunted House",
-      "rating": 4.1
+      "rating": 4.1,
+      "id": 8
     },
     {
-      "image": "https://www.freepik.com/free-vector/professional-business-book-cover_28912202.htm#fromView=search&page=1&position=40&uuid=6ba0576b-b354-435c-b70b-98987b6691ad",
+      "image": "https://i.ibb.co/fpKjpjj/Book-Card-8.png",
       "genre": "Dystopian",
       "author": "Jason Green",
       "title": "The Last Survivor",
-      "rating": 4.9
+      "rating": 4.9,
+      "id": 9
     }
   ]
   

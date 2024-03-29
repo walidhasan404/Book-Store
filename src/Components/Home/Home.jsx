@@ -1,6 +1,15 @@
-const Home = () => {
+import { useEffect, useState } from "react";
+import BookCard from "../BookCard/BookCard";
 
-    const
+const Home = () => {
+   const [books, setBooks] = useState([]);
+
+   useEffect(() =>{
+    fetch('Books.json')
+    .then(res => res.json())
+    .then(data => setBooks(data));
+   }, [])
+
     return (
         <div className="p-8">
             <div className="flex p-4 justify-evenly bg-gray-100">
@@ -12,9 +21,15 @@ const Home = () => {
                     <img src="src/Components/Container/img.png" alt="" />
                 </div>
             </div>
-            <div className="mt-8">
-                <h3 className="text-4xl font-bold text-center">Books</h3>
-                
+            <div className="my-8">
+                <h3 className="text-4xl font-bold text-center mb-6">Books</h3>
+                <div className="grid grid-cols-3 gap-4">
+                    {
+                        books.map(book => <BookCard key={book.id} book={book}>
+
+                        </BookCard>)
+                    }
+                </div>
             </div>
         </div>
     );
