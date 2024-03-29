@@ -1,0 +1,66 @@
+[
+    {
+      "image": "https://www.freepik.com/free-psd/realistic-book-cover-presentation_1016369.htm#fromView=search&page=1&position=15&uuid=6ba0576b-b354-435c-b70b-98987b6691ad",
+      "genre": "Science Fiction",
+      "author": "John Smith",
+      "title": "The Galactic Adventures",
+      "rating": 4.5
+    },
+    {
+      "image": "https://www.freepik.com/free-psd/book-hardcover-mockup_10698307.htm#fromView=search&page=1&position=13&uuid=6ba0576b-b354-435c-b70b-98987b6691ad",
+      "genre": "Mystery",
+      "author": "Emily Johnson",
+      "title": "The Mystery of Oakwood Manor",
+      "rating": 4.2
+    },
+    {
+      "image": "https://www.freepik.com/free-psd/realistic-book-cover-presentation_1016368.htm#fromView=search&page=1&position=5&uuid=6ba0576b-b354-435c-b70b-98987b6691ad",
+      "genre": "Fantasy",
+      "author": "David Brown",
+      "title": "The Wizard's Apprentice",
+      "rating": 4.8
+    },
+    {
+      "image": "https://www.freepik.com/free-psd/book-hardcover-mockup_9866173.htm#fromView=search&page=1&position=41&uuid=6ba0576b-b354-435c-b70b-98987b6691ad",
+      "genre": "Romance",
+      "author": "Sophia Lee",
+      "title": "Love in Paris",
+      "rating": 4.3
+    },
+    {
+      "image": "https://www.freepik.com/free-vector/world-book-day-background-flat-syle_2032601.htm#fromView=search&page=1&position=48&uuid=6ba0576b-b354-435c-b70b-98987b6691ad",
+      "genre": "Thriller",
+      "author": "Michael Adams",
+      "title": "The Silent Killer",
+      "rating": 4.6
+    },
+    {
+      "image": "https://www.freepik.com/free-vector/bike-guy-wattpad-book-cover_28596242.htm#fromView=search&page=1&position=51&uuid=6ba0576b-b354-435c-b70b-98987b6691ad",
+      "genre": "Historical Fiction",
+      "author": "Emma White",
+      "title": "The Secret Diary of Anne Frank",
+      "rating": 4.7
+    },
+    {
+      "image": "https://www.freepik.com/free-vector/open-book-templates-set_3924771.htm#fromView=search&page=1&position=52&uuid=6ba0576b-b354-435c-b70b-98987b6691ad",
+      "genre": "Young Adult",
+      "author": "William Taylor",
+      "title": "The Maze Runner",
+      "rating": 4.4
+    },
+    {
+      "image": "https://www.freepik.com/free-psd/book-hardcover-mockup_9866173.htm#fromView=search&page=1&position=41&uuid=6ba0576b-b354-435c-b70b-98987b6691ad",
+      "genre": "Horror",
+      "author": "Sarah Jones",
+      "title": "The Haunted House",
+      "rating": 4.1
+    },
+    {
+      "image": "https://www.freepik.com/free-vector/professional-business-book-cover_28912202.htm#fromView=search&page=1&position=40&uuid=6ba0576b-b354-435c-b70b-98987b6691ad",
+      "genre": "Dystopian",
+      "author": "Jason Green",
+      "title": "The Last Survivor",
+      "rating": 4.9
+    }
+  ]
+  

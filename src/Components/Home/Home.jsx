@@ -1,4 +1,6 @@
 const Home = () => {
+
+    const
     return (
         <div className="p-8">
             <div className="flex p-4 justify-evenly bg-gray-100">
@@ -9,6 +11,10 @@ const Home = () => {
                 <div>
                     <img src="src/Components/Container/img.png" alt="" />
                 </div>
+            </div>
+            <div className="mt-8">
+                <h3 className="text-4xl font-bold text-center">Books</h3>
+                
             </div>
         </div>
     );
