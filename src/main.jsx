@@ -12,6 +12,7 @@ import Contact from './Components/Contact/Contact';
 import ErrorPage from './Components/ErrorPage/ErrorPage';
 import BookDetails from './Components/BookDetails/BookDetails';
 import ListBooksCard from './Components/ListBooksCard/ListBooksCard';
+import Chart from './Components/Chart/Chart';
 
 const router = createBrowserRouter([
   {
@@ -30,7 +31,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/read',
-        
+        element: <Chart></Chart>
       },
       {
         path: '/about',
