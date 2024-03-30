@@ -11,14 +11,14 @@
     "id": 1
   },
   {
-    "image": "https://i.ibb.co/4FKpnyX/Book-Card-1.png",
-    "img": "https://i.ibb.co/nzdQ4S3/kindpng-7318921.png",
-    "genre": "Mystery",
-    "author": "Emily Johnson",
-    "title": "The Mystery of Oakwood Manor",
-    "rating": 4.2,
-    "review": "A gripping mystery filled with twists and turns that will keep you guessing until the very end.",
-    "numOfPages": 368,
+    "image": "https://i.ibb.co/fpKjpjj/Book-Card-8.png",
+    "img": "https://i.ibb.co/vwRWRrT/kindpng-4945926-1.png",
+    "genre": "Dystopian",
+    "author": "Jason Green",
+    "title": "The Last Survivor",
+    "rating": 4.9,
+    "review": "A gripping dystopian thriller that explores themes of survival, resilience, and the human spirit.",
+    "numOfPages": 416,
     "id": 2
   },
   {
@@ -88,14 +88,14 @@
     "id": 8
   },
   {
-    "image": "https://i.ibb.co/fpKjpjj/Book-Card-8.png",
-    "img": "https://i.ibb.co/vwRWRrT/kindpng-4945926-1.png",
-    "genre": "Dystopian",
-    "author": "Jason Green",
-    "title": "The Last Survivor",
-    "rating": 4.9,
-    "review": "A gripping dystopian thriller that explores themes of survival, resilience, and the human spirit.",
-    "numOfPages": 416,
+    "image": "https://i.ibb.co/4FKpnyX/Book-Card-1.png",
+    "img": "https://i.ibb.co/nzdQ4S3/kindpng-7318921.png",
+    "genre": "Mystery",
+    "author": "Emily Johnson",
+    "title": "The Mystery of Oakwood Manor",
+    "rating": 4.2,
+    "review": "A gripping mystery filled with twists and turns that will keep you guessing until the very end.",
+    "numOfPages": 368,
     "id": 9
   }
 ]

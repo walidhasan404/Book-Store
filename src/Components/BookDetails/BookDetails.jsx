@@ -3,9 +3,11 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 import React from "react";
+import { readBooks } from "../../Utility/LocalStorage";
 const BookDetails = () => {
 
     const handleRead = () =>{
+        readBooks(idInt);
         toast('added to read successfully')
     }
     const handleWishlist = () =>{
@@ -14,7 +16,8 @@ const BookDetails = () => {
 
     const books = useLoaderData();
     const { id } = useParams();
-    const book = books.find(book => book.id == id)
+    const idInt = parseInt(id);
+    const book = books.find(book => book.id == idInt);
     return (
         <div className="p-8">
             <h2 className="text-3xl text-center mb-4 font-bold">Book Details: { }</h2>

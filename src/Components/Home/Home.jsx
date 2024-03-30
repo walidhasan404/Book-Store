@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import BookCard from "../BookCard/BookCard";
 import img from "../Container/img.png"
+import { Link } from "react-router-dom";
 
 const Home = () => {
    const [books, setBooks] = useState([]);
@@ -16,7 +17,7 @@ const Home = () => {
             <div className="flex lg:flex-row flex-col p-4 justify-evenly bg-gray-100">
                 <div className="lg:my-auto text-center lg:text-start">
                     <h2 className="text-lg lg:text-4xl font-bold mb-4">Books to freshen up your bookshelf</h2>
-                    <button className="btn btn-success">View The List</button>
+                    <Link to="/books"><button className="btn btn-success">View The List</button></Link>
                 </div>
                 <div className="mx-auto lg:mx-0 mt-3">
                     <img src={img} alt="" />
