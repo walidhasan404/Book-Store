@@ -1,6 +1,16 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import React from "react";
 const BookDetails = () => {
+
+    const handleRead = () =>{
+        toast('added to read successfully')
+    }
+    const handleWishlist = () =>{
+        toast('added to wishlist')
+    }
 
     const books = useLoaderData();
     const { id } = useParams();
@@ -18,11 +28,12 @@ const BookDetails = () => {
                     <p><span className="text-lg font-medium">Number of pages:</span> {book.numOfPages}</p>
                     <p className="text-lg font-medium">rating: <span className="font-normal">{book.rating}</span></p>
                     <div className="flex gap-4">
-                        <button className="btn btn-success text-white">Read</button>
-                        <button className="btn btn-primary text-white">Wishlist</button>
+                        <button onClick={handleRead} className="btn btn-success text-white">Read</button>
+                        <button onClick={handleWishlist} className="btn btn-primary text-white">Wishlist</button>
                     </div>
                 </div>
             </div>
+            <ToastContainer />
         </div>
     );
 };

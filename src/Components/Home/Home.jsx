@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import BookCard from "../BookCard/BookCard";
+import img from "../Container/img.png"
 
 const Home = () => {
    const [books, setBooks] = useState([]);
@@ -18,7 +19,7 @@ const Home = () => {
                     <button className="btn btn-success">View The List</button>
                 </div>
                 <div className="mx-auto lg:mx-0 mt-3">
-                    <img src="src/Components/Container/img.png" alt="" />
+                    <img src={img} alt="" />
                 </div>
             </div>
             <div className="my-8">
