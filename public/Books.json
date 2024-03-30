@@ -1,75 +1,101 @@
 [
-    {
-      "image": "https://i.ibb.co/hcdc1G4/Book-Card.png",
-      "genre": "Fiction",
-      "author": "Awlad Hossain",
-      "title": "The Catcher in the Rye",
-      "rating": 5.00,
-      "id": 1
-    },
-    {
-      "image": "https://i.ibb.co/4FKpnyX/Book-Card-1.png",
-      "genre": "Mystery",
-      "author": "Emily Johnson",
-      "title": "The Mystery of Oakwood Manor",
-      "rating": 4.2,
-      "id": 2
-    },
-    {
-      "image": "https://i.ibb.co/3kT6KLR/Book-Card-6.png",
-      "genre": "Fantasy",
-      "author": "David Brown",
-      "title": "The Wizard's Apprentice",
-      "rating": 4.8,
-      "id": 3
-    },
-    {
-      "image": "https://i.ibb.co/VNFWTYV/Book-Card-5.png",
-      "genre": "Romance",
-      "author": "Sophia Lee",
-      "title": "Love in Paris",
-      "rating": 4.3,
-      "id": 4
-    },
-    {
-      "image": "https://i.ibb.co/3kT6KLR/Book-Card-6.png",
-      "genre": "Thriller",
-      "author": "Michael Adams",
-      "title": "The Silent Killer",
-      "rating": 4.6,
-      "id": 5
-    },
-    {
-      "image": "https://i.ibb.co/fM6p2d4/Book-Card-3.png",
-      "genre": "Historical Fiction",
-      "author": "Emma White",
-      "title": "The Secret Diary of Anne Frank",
-      "rating": 4.7,
-      "id": 6
-    },
-    {
-      "image": "https://i.ibb.co/HTf65qS/Book-Card-2.png",
-      "genre": "Young Adult",
-      "author": "William Taylor",
-      "title": "The Maze Runner",
-      "rating": 4.4,
-      "id": 7
-    },
-    {
-      "image": "https://i.ibb.co/HD7HrvZ/Book-Card-7.png",
-      "genre": "Horror",
-      "author": "Sarah Jones",
-      "title": "The Haunted House",
-      "rating": 4.1,
-      "id": 8
-    },
-    {
-      "image": "https://i.ibb.co/fpKjpjj/Book-Card-8.png",
-      "genre": "Dystopian",
-      "author": "Jason Green",
-      "title": "The Last Survivor",
-      "rating": 4.9,
-      "id": 9
-    }
-  ]
-  
+  {
+    "image": "https://i.ibb.co/hcdc1G4/Book-Card.png",
+    "img": "https://i.ibb.co/jT4sNFx/kindpng-4022054-1.png",
+    "genre": "Fiction",
+    "author": "Awlad Hossain",
+    "title": "The Catcher in the Rye",
+    "rating": 5.00,
+    "review": "A classic coming-of-age novel that captures the angst and disillusionment of adolescence with unparalleled authenticity.",
+    "numOfPages": 224,
+    "id": 1
+  },
+  {
+    "image": "https://i.ibb.co/4FKpnyX/Book-Card-1.png",
+    "img": "https://i.ibb.co/nzdQ4S3/kindpng-7318921.png",
+    "genre": "Mystery",
+    "author": "Emily Johnson",
+    "title": "The Mystery of Oakwood Manor",
+    "rating": 4.2,
+    "review": "A gripping mystery filled with twists and turns that will keep you guessing until the very end.",
+    "numOfPages": 368,
+    "id": 2
+  },
+  {
+    "image": "https://i.ibb.co/3kT6KLR/Book-Card-6.png",
+    "img": "https://i.ibb.co/0q7nF0s/kindpng-5624060-1.png",
+    "genre": "Fantasy",
+    "author": "David Brown",
+    "title": "The Wizard's Apprentice",
+    "rating": 4.8,
+    "review": "An enchanting tale of magic and adventure that transports readers to a world of wonder and imagination.",
+    "numOfPages": 416,
+    "id": 3
+  },
+  {
+    "image": "https://i.ibb.co/VNFWTYV/Book-Card-5.png",
+    "img": "https://i.ibb.co/Yb6qP6h/kindpng-2592315-1.png",
+    "genre": "Romance",
+    "author": "Sophia Lee",
+    "title": "Love in Paris",
+    "rating": 4.3,
+    "review": "A heartwarming love story set against the backdrop of the City of Light, brimming with romance and charm.",
+    "numOfPages": 352,
+    "id": 4
+  },
+  {
+    "image": "https://i.ibb.co/3kT6KLR/Book-Card-6.png",
+    "img": "https://i.ibb.co/0q7nF0s/kindpng-5624060-1.png",
+    "genre": "Thriller",
+    "author": "Michael Adams",
+    "title": "The Silent Killer",
+    "rating": 4.6,
+    "review": "A gripping thriller that keeps readers on the edge of their seats with its relentless pace and shocking twists.",
+    "numOfPages": 288,
+    "id": 5
+  },
+  {
+    "image": "https://i.ibb.co/fM6p2d4/Book-Card-3.png",
+    "img": "https://i.ibb.co/XsQMg95/kindpng-1064993.png",
+    "genre": "Historical Fiction",
+    "author": "Emma White",
+    "title": "The Secret Diary of Anne Frank",
+    "rating": 4.7,
+    "review": "A poignant and powerful portrayal of one girl's struggle to survive in the face of unimaginable adversity.",
+    "numOfPages": 352,
+    "id": 6
+  },
+  {
+    "image": "https://i.ibb.co/HTf65qS/Book-Card-2.png",
+    "img": "https://i.ibb.co/QdMy9Ms/pngwing-1.png",
+    "genre": "Young Adult",
+    "author": "William Taylor",
+    "title": "The Maze Runner",
+    "rating": 4.4,
+    "review": "An action-packed dystopian thriller that will leave readers breathless with its twists and turns.",
+    "numOfPages": 384,
+    "id": 7
+  },
+  {
+    "image": "https://i.ibb.co/HD7HrvZ/Book-Card-7.png",
+    "img": "https://i.ibb.co/NTYyTpx/kindpng-81724-1.png",
+    "genre": "Horror",
+    "author": "Sarah Jones",
+    "title": "The Haunted House",
+    "rating": 4.1,
+    "review": "A spine-chilling tale of terror that will haunt your dreams long after you've turned the last page.",
+    "numOfPages": 320,
+    "id": 8
+  },
+  {
+    "image": "https://i.ibb.co/fpKjpjj/Book-Card-8.png",
+    "img": "https://i.ibb.co/vwRWRrT/kindpng-4945926-1.png",
+    "genre": "Dystopian",
+    "author": "Jason Green",
+    "title": "The Last Survivor",
+    "rating": 4.9,
+    "review": "A gripping dystopian thriller that explores themes of survival, resilience, and the human spirit.",
+    "numOfPages": 416,
+    "id": 9
+  }
+]
