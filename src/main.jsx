@@ -1,6 +1,6 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import './index.css'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -11,10 +11,8 @@ import About from './Components/About/About';
 import Contact from './Components/Contact/Contact';
 import ErrorPage from './Components/ErrorPage/ErrorPage';
 import BookDetails from './Components/BookDetails/BookDetails';
-import ListBooksCard from './Components/ListBooksCard/ListBooksCard';
-import Chart from './Components/Chart/Chart';
 import ListedBooksPage from './Components/ListedBooksPage/ListedBooksPage';
-import WishlistBooksCard from './Components/Wishlist/Wishlist';
+import RenderBarChart from './Components/Chart/Chart';
 
 const router = createBrowserRouter([
   {
@@ -33,18 +31,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/read',
-        element: <ListBooksCard></ListBooksCard>,
-        loader: () => fetch('../Books.json'),
-      },
-      {
-        path: '/wishlist',
-        element: <WishlistBooksCard></WishlistBooksCard>,
-        loader: () => fetch('../Books.json'),
-      },
-
-      {
-        path: '/read1',
-        element: <Chart></Chart>
+        element: <RenderBarChart></RenderBarChart>
       },
       {
         path: '/about',
@@ -63,8 +50,7 @@ const router = createBrowserRouter([
   },
 ]);
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>,
-)
+ReactDOM.render(
+  <RouterProvider router={router} />,
+  document.getElementById('root')
+);

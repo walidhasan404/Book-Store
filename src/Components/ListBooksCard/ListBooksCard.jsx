@@ -25,7 +25,7 @@ const ListBooksCard = () => {
     return (
         
         <div className="p-2">
-            <h3 className="text-xl mx-6 font-bold">Read Books</h3>
+            <h3 className="text-4xl text-center font-bold">Read Books</h3>
 
             {readBooks.map((book) => (
 

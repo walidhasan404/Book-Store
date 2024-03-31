@@ -22,7 +22,7 @@ const Navbar = () => {
                 <ul className="menu menu-horizontal px-1">
                     <li className="font-normal text-sm"><NavLink to="/">Home</NavLink></li>
                     <li className="font-normal text-sm"><NavLink to="/books">Listed Books</NavLink></li>
-                    <li className="font-normal text-sm"><NavLink to="/read1">Pages to Read</NavLink></li>
+                    <li className="font-normal text-sm"><NavLink to="/read">Pages to Read</NavLink></li>
                     <li className="font-normal text-sm"><NavLink to="/about">About</NavLink></li>
                     <li className="font-normal text-sm"><NavLink to="/contact">Contact</NavLink></li>
                 </ul>
