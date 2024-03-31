@@ -1,11 +1,13 @@
-import React, { useEffect, useState } from "react"; 
-import { Link, useLoaderData } from "react-router-dom"; 
+import React, { useEffect, useState } from "react";
+import { Link, useLoaderData } from "react-router-dom";
 import { getStoredBooks, removeReadBook } from "../../Utility/LocalStorage";
 
-const WishlistBooksCard = () => { 
+const WishlistBooksCard = () => {
     const books = useLoaderData();
 
-    const [wishlistBooks, setWishlistBooks] = useState([]); 
+    const [wishlistBooks, setWishlistBooks] = useState([]);
+    const [sortBy, setSortBy] = useState(null);
+    const [sortOrder, setSortOrder] = useState("ascending");
 
     useEffect(() => {
         const storedBookIds = getStoredBooks();
@@ -27,10 +29,40 @@ const WishlistBooksCard = () => {
         removeReadBook(id); // Update local storage
     };
 
+    const handleSortBy = (criteria) => {
+        if (criteria === sortBy) {
+            setSortOrder(sortOrder === "ascending" ? "descending" : "ascending");
+        } else {
+            setSortBy(criteria);
+            setSortOrder("descending");
+        }
+    };
+
+    let sortedBooks = [...wishlistBooks];
+    if (sortBy === "rating") {
+        sortedBooks = sortedBooks.sort((a, b) => b.rating - a.rating);
+    } else if (sortBy === "numOfPages") {
+        sortedBooks = sortedBooks.sort((a, b) => b.numOfPages - a.numOfPages);
+    } else if (sortBy === "publish_date") {
+        sortedBooks = sortedBooks.sort((a, b) => new Date(b.publish_date) - new Date(a.publish_date));
+    }
+
+    if (sortOrder === "ascending") {
+        sortedBooks.reverse();
+    }
+
     return (
         <div className="p-2">
-            <h3 className="text-4xl text-center font-bold">Read Books</h3> 
-            {wishlistBooks.map((book) => (
+            <h3 className="text-4xl text-center font-bold">Read Books</h3>
+            <div className="dropdown my-6 flex justify-center">
+                <div tabIndex={0} role="button" className="btn m-1 bg-green-600 hover:bg-green-700 text-white">Sort By</div>
+                <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-green-300 hover:bg-yellow rounded-box w-52">
+                    <li className="hover:bg-white" onClick={() => handleSortBy("rating")}>Rating</li>
+                    <li className="hover:bg-white" onClick={() => handleSortBy("numOfPages")}>Number of Pages</li>
+                    <li className="hover:bg-white" onClick={() => handleSortBy("publish_date")}>Publish Date</li>
+                </ul>
+            </div>
+            {sortedBooks.map((book) => (
                 <div key={book.id} className="card card-side bg-base-100 flex flex-col lg:flex-row shadow-xl p-6">
                     <figure className="bg-gray-100 p-2 lg:p-8 my-auto "><img src={book.img} alt="Book" /></figure>
                     <div className="card-body">

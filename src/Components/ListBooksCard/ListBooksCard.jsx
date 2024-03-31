@@ -1,12 +1,12 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useLoaderData } from "react-router-dom";
 import { getStoredBooks } from "../../Utility/LocalStorage";
 
 const ListBooksCard = () => {
     const books = useLoaderData();
 
-
     const [readBooks, setReadBooks] = useState([]);
+    const [sortBy, setSortBy] = useState(null);
 
     useEffect(() => {
         const storedBookIds = getStoredBooks();
@@ -27,13 +27,31 @@ const ListBooksCard = () => {
         setReadBooks(updatedReadBooks);
     };
 
+    const handleSortBy = (criteria) => {
+        setSortBy(criteria);
+    };
+
+    let sortedBooks = [...readBooks];
+    if (sortBy === "rating") {
+        sortedBooks = sortedBooks.sort((a, b) => b.rating - a.rating);
+    } else if (sortBy === "numOfPages") {
+        sortedBooks = sortedBooks.sort((a, b) => b.numOfPages - a.numOfPages);
+    } else if (sortBy === "publish_date") {
+        sortedBooks = sortedBooks.sort((a, b) => new Date(b.publish_date) - new Date(a.publish_date));
+    }
+
     return (
-        
         <div className="p-2">
             <h3 className="text-4xl text-center font-bold">Wishlist Books</h3>
-
-            {readBooks.map((book) => (
-
+            <div className="dropdown my-6 flex justify-center">
+                <div tabIndex={0} role="button" className="btn m-1 bg-green-600 hover:bg-green-700 text-white">Sort By</div>
+                <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-green-300 hover:bg-yellow rounded-box w-52">
+                    <li className="hover:bg-white" onClick={() => handleSortBy("rating")}>Rating</li>
+                    <li className="hover:bg-white" onClick={() => handleSortBy("numOfPages")}>Number of Pages</li>
+                    <li className="hover:bg-white" onClick={() => handleSortBy("publish_date")}>Publish Date</li>
+                </ul>
+            </div>
+            {sortedBooks.map((book) => (
                 <div key={book.id} className="card card-side bg-base-100 shadow-xl flex flex-col lg:flex-row p-4">
                     <figure className="bg-gray-100 p-2 lg:p-8 my-auto"><img src={book.img} alt="Book" /></figure>
                     <div className="card-body">
@@ -56,7 +74,6 @@ const ListBooksCard = () => {
                         </div>
                     </div>
                 </div>
-
             ))}
         </div>
     );
