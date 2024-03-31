@@ -8,7 +8,10 @@
     "rating": 5.00,
     "review": "A classic coming-of-age novel that captures the angst and disillusionment of adolescence with unparalleled authenticity.",
     "numOfPages": 224,
-    "id": 1
+    "id": 1,
+    "publisher": "Little, Brown and Company",
+    "publish_date": "July 16, 1951",
+    "tags": ["classic", "coming-of-age"]
   },
   {
     "image": "https://i.ibb.co/fpKjpjj/Book-Card-8.png",
@@ -19,7 +22,10 @@
     "rating": 4.9,
     "review": "A gripping dystopian thriller that explores themes of survival, resilience, and the human spirit.",
     "numOfPages": 416,
-    "id": 2
+    "id": 2,
+    "publisher": "HarperCollins",
+    "publish_date": "May 19, 2023",
+    "tags": ["dystopian", "thriller"]
   },
   {
     "image": "https://i.ibb.co/3kT6KLR/Book-Card-6.png",
@@ -30,7 +36,10 @@
     "rating": 4.8,
     "review": "An enchanting tale of magic and adventure that transports readers to a world of wonder and imagination.",
     "numOfPages": 416,
-    "id": 3
+    "id": 3,
+    "publisher": "Penguin Books",
+    "publish_date": "March 8, 2019",
+    "tags": ["fantasy", "magic", "adventure"]
   },
   {
     "image": "https://i.ibb.co/VNFWTYV/Book-Card-5.png",
@@ -41,7 +50,10 @@
     "rating": 4.3,
     "review": "A heartwarming love story set against the backdrop of the City of Light, brimming with romance and charm.",
     "numOfPages": 352,
-    "id": 4
+    "id": 4,
+    "publisher": "Simon & Schuster",
+    "publish_date": "November 12, 2018",
+    "tags": ["romance", "Paris"]
   },
   {
     "image": "https://i.ibb.co/3kT6KLR/Book-Card-6.png",
@@ -52,7 +64,10 @@
     "rating": 4.6,
     "review": "A gripping thriller that keeps readers on the edge of their seats with its relentless pace and shocking twists.",
     "numOfPages": 288,
-    "id": 5
+    "id": 5,
+    "publisher": "Random House",
+    "publish_date": "September 3, 2022",
+    "tags": ["thriller", "suspense"]
   },
   {
     "image": "https://i.ibb.co/fM6p2d4/Book-Card-3.png",
@@ -63,7 +78,10 @@
     "rating": 4.7,
     "review": "A poignant and powerful portrayal of one girl's struggle to survive in the face of unimaginable adversity.",
     "numOfPages": 352,
-    "id": 6
+    "id": 6,
+    "publisher": "Doubleday",
+    "publish_date": "June 25, 1947",
+    "tags": ["historical", "diary"]
   },
   {
     "image": "https://i.ibb.co/HTf65qS/Book-Card-2.png",
@@ -74,7 +92,10 @@
     "rating": 4.4,
     "review": "An action-packed dystopian thriller that will leave readers breathless with its twists and turns.",
     "numOfPages": 384,
-    "id": 7
+    "id": 7,
+    "publisher": "Delacorte Press",
+    "publish_date": "October 6, 2009",
+    "tags": ["young adult", "dystopian", "adventure"]
   },
   {
     "image": "https://i.ibb.co/HD7HrvZ/Book-Card-7.png",
@@ -85,7 +106,10 @@
     "rating": 4.1,
     "review": "A spine-chilling tale of terror that will haunt your dreams long after you've turned the last page.",
     "numOfPages": 320,
-    "id": 8
+    "id": 8,
+    "publisher": "Houghton Mifflin",
+    "publish_date": "October 15, 2005",
+    "tags": ["horror", "terror"]
   },
   {
     "image": "https://i.ibb.co/4FKpnyX/Book-Card-1.png",
@@ -96,6 +120,9 @@
     "rating": 4.2,
     "review": "A gripping mystery filled with twists and turns that will keep you guessing until the very end.",
     "numOfPages": 368,
-    "id": 9
+    "id": 9,
+    "publisher": "Penguin Random House",
+    "publish_date": "April 1, 2017",
+    "tags": ["horror", "terror"]
   }
 ]

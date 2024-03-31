@@ -2,29 +2,35 @@ import React, { useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { readBooks } from "../../Utility/LocalStorage";
+import { addReadBook, removeReadBook, getStoredBooks } from "../../Utility/LocalStorage";
 
 const BookDetails = () => {
     const [clicked, setClicked] = useState(false);
-
-    const handleRead = () => {
-        readBooks(idInt);
-        toast.success('Added to read successfully');
-    };
-
-    const handleWishlist = () => {
-        if (!clicked) {
-            toast.success('Added to wishlist');
-            setClicked(true);
-        } else {
-            toast.error('Already added to wishlist');
-        }
-    };
-
     const { id } = useParams();
     const idInt = parseInt(id);
     const books = useLoaderData();
     const book = books.find(book => book.id === idInt);
+
+    const handleRead = () => {
+        addReadBook(idInt);
+        toast.success('Added to read successfully');
+    };
+
+    const handleWishlist = () => {
+        const storedBooks = getStoredBooks();
+        if (storedBooks.includes(idInt)) {
+            toast.error('Already added to read');
+        } else {
+            if (!storedBooks.includes(idInt)) {
+                addWishlistBook(idInt);
+                toast.success('Added to wishlist');
+                setIsAddedToWishlist(true);
+            } else {
+                toast.error('Already added to wishlist');
+            }
+        }
+    };
+    
 
     return (
         <div className="p-8">
@@ -40,7 +46,7 @@ const BookDetails = () => {
                     <p className="text-lg font-medium">Rating: <span className="font-normal">{book.rating}</span></p>
                     <div className="flex gap-4">
                         <button onClick={handleRead} className="btn btn-success text-white">Read</button>
-                        <button onClick={handleWishlist} className="btn btn-primary text-white">Wishlist</button>
+                        <button onClick={handleWishlist} className="btn btn-primary text-white">{clicked ? "Remove from Wishlist" : "Add to Wishlist"}</button>
                     </div>
                 </div>
             </div>

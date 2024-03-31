@@ -1,19 +1,24 @@
-const getStoredBooks = () =>{
+const getStoredBooks = () => {
     const storedBook = localStorage.getItem('read-books');
-    if(storedBook){
+    if (storedBook) {
         return JSON.parse(storedBook);
     }
     return [];
-} 
+}
 
-
-const readBooks = id =>{
+const addReadBook = (id) => {
     const storedBooks = getStoredBooks();
     const exists = storedBooks.find(bookId => bookId === id);
-    if(!exists){
+    if (!exists) {
         storedBooks.push(id);
-        localStorage.setItem('read-books', JSON.stringify(storedBooks))
+        localStorage.setItem('read-books', JSON.stringify(storedBooks));
     }
 }
 
-export {getStoredBooks, readBooks}
+const removeReadBook = (id) => {
+    const storedBooks = getStoredBooks();
+    const updatedBooks = storedBooks.filter(bookId => bookId !== id);
+    localStorage.setItem('read-books', JSON.stringify(updatedBooks));
+}
+
+export { getStoredBooks, addReadBook, removeReadBook };
