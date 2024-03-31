@@ -21,4 +21,12 @@ const removeReadBook = (id) => {
     localStorage.setItem('read-books', JSON.stringify(updatedBooks));
 }
 
-export { getStoredBooks, addReadBook, removeReadBook };
+
+const addWishlistBook = (id) => {
+    const storedBooks = getStoredBooks();
+    storedBooks.push(id);
+    localStorage.setItem('wishlist-books', JSON.stringify(storedBooks));
+};
+
+
+export { getStoredBooks, addReadBook, removeReadBook, addWishlistBook };

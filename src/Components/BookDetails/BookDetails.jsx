@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { addReadBook, removeReadBook, getStoredBooks } from "../../Utility/LocalStorage";
+import { addReadBook, getStoredBooks, addWishlistBook } from "../../Utility/LocalStorage";
 
 const BookDetails = () => {
     const [clicked, setClicked] = useState(false);
@@ -19,18 +19,13 @@ const BookDetails = () => {
     const handleWishlist = () => {
         const storedBooks = getStoredBooks();
         if (storedBooks.includes(idInt)) {
-            toast.error('Already added to read');
+            toast.error('Already added to wishlist');
         } else {
-            if (!storedBooks.includes(idInt)) {
-                addWishlistBook(idInt);
-                toast.success('Added to wishlist');
-                setIsAddedToWishlist(true);
-            } else {
-                toast.error('Already added to wishlist');
-            }
+            addWishlistBook(idInt);
+            toast.success('Added to wishlist');
+            setClicked(true);
         }
     };
-    
 
     return (
         <div className="p-8">
