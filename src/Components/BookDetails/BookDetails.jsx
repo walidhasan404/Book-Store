@@ -19,7 +19,7 @@ const BookDetails = () => {
     const handleWishlist = () => {
         const storedBooks = getStoredBooks();
         if (storedBooks.includes(idInt)) {
-            toast.error('Already added to wishlist');
+            toast.error('Already added to Read');
         } else {
             addWishlistBook(idInt);
             toast.success('Added to wishlist');
