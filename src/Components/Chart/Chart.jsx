@@ -2,15 +2,15 @@ import React from 'react';
 import { BarChart, Bar, XAxis, YAxis } from 'recharts';
 
 const data = [
-    { bookName: "The Catcher in the Rye", numOfBooksRead: 3 },
-    { bookName: "The Mystery of Oakwood Manor", numOfBooksRead: 5 },
-    { bookName: "The Wizard's Apprentice", numOfBooksRead: 7 },
-    { bookName: "Love in Paris", numOfBooksRead: 10 },
-    { bookName: "The Silent Killer", numOfBooksRead: 12 },
-    { bookName: "The Secret Diary of Anne Frank", numOfBooksRead: 15 },
-    { bookName: "The Maze Runner", numOfBooksRead: 18 },
-    { bookName: "The Haunted House", numOfBooksRead: 20 },
-    { bookName: "The Last Survivor", numOfBooksRead: 22 }
+    { bookName: "The Catcher in the Rye", numOfPagesRead: 224 },
+    { bookName: "The Mystery of Oakwood Manor", numOfPagesRead: 368 },
+    { bookName: "The Wizard's Apprentice", numOfPagesRead: 416 },
+    { bookName: "Love in Paris", numOfPagesRead: 352 },
+    { bookName: "The Silent Killer", numOfPagesRead: 288 },
+    { bookName: "The Secret Diary of Anne Frank", numOfPagesRead: 352 },
+    { bookName: "The Maze Runner", numOfPagesRead: 384 },
+    { bookName: "The Haunted House", numOfPagesRead: 320 },
+    { bookName: "The Last Survivor", numOfPagesRead: 416 }
 ];
 
 const getPath = (x, y, width, height) => (
@@ -34,7 +34,7 @@ const RenderBarChart = () => (
         <BarChart width={600} height={300} data={data}>
             <XAxis dataKey="bookName" />
             <YAxis />
-            <Bar dataKey="numOfBooksRead" fill="#8884d8" shape={<TriangleBar />} />
+            <Bar dataKey="numOfPagesRead" fill="#8884d8" shape={<TriangleBar />} />
         </BarChart>
     </div>
 );
